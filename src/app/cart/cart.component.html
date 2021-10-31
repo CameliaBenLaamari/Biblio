@@ -1,0 +1,35 @@
+<div class="container">
+    <h1>Shopping cart</h1>
+    <div *ngIf="items">
+        <table>
+            <tr>
+                <th colspan="2" style="width: 64%">Book</th>
+                <th style="width: 12%;">Price</th>
+                <th style="width: 12%;">Quantity</th>
+                <th style="width: 12%;">Sub Total</th>
+            </tr>
+            <tr *ngFor="let item of items">
+                <td style="width: 10%;"><img src={{item.book.image}} style="max-width: 100%; max-height: 100%;"></td>
+                <td style="width: 54%;">
+                    <div class="row" style="justify-content: space-between; word-wrap: break-word;">
+                        {{item.book.name}}
+                        <a class="remove" (click)="delete(item)"></a>
+                    </div>
+                </td>
+                <td style="width: 12%;">{{item.book.currency}}{{item.book.price}}</td>
+                <td style="width: 12%;">
+                    <div class="row">
+                        <a class="minus" (click)="decrease(item)"></a>
+                        {{item.quantity}}
+                        <a class="plus" (click)="increase(item)"></a>
+                    </div>
+                </td>
+                <td style="width: 12%;">{{item.book.currency}}{{getPrice(item)}}</td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: center;">TOTAL: <strong style="font-size: 20px;">${{total}}</strong></td>
+            </tr>
+        </table>
+        <a class="button" (click)="removeAll()">Remove all items<div class="icon"></div></a>
+    </div>
+</div>

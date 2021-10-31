@@ -1,0 +1,30 @@
+<div class="hero-image">
+  <div class="hero-text">
+    <img src="assets/white_logo.svg" height="60px">
+    <h2>Open a book, and you<br>open a universe!</h2>
+    <div class="input_container">
+      <input class="form-control" type="text" name="name" [(ngModel)] = "name" (ngModelChange)="Search()" placeholder="Enter a book name">
+      <img src="assets/search.svg">
+  </div>
+  </div>
+</div>
+<div class="container">
+  <mat-grid-list cols="6" rowHeight="2:3">
+    <mat-grid-tile *ngFor="let book of books | paginate: {itemsPerPage: 18, currentPage: page}">
+        <div class="card">
+            <a class="image">
+                <img src={{book.image}}/>
+                <a [ngClass]="{'round_button_active': isInWishlist(book), 'round_button': !isInWishlist(book)}" (click)="addToWishlist(book)"></a>
+            </a>
+            <p><strong>{{book.name}}</strong><br>{{book.author}}</p>
+            <div class="row" *ngIf="book">
+                <p style="font-size: 18px; font-weight: bold;">{{book.currency}}{{book.price}}</p>
+                <a class="round" (click)="addToCart(book)"><img src="assets/buy.svg" style="height: 24px"/></a>
+            </div>
+        </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+<div style="text-align: center; padding: 50px;">
+  <pagination-controls (pageChange)="page = $event" class="paginator"></pagination-controls>
+</div>

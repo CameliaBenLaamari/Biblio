@@ -1,0 +1,112 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --ds-color-brand: #E41421;
+    --ds-color-primary: #FF596F;
+    --ds-color-neutral-50: #F9F9FB;
+    --ds-color-neutral-100: #F2F2F6;
+    --ds-color-neutral-200: #D6DADF;
+    --ds-color-neutral-300: #9695A8;
+    --ds-color-neutral-500: #757195;
+    --ds-color-neutral-800: #19124F;
+    --ds-color-neutral-900: #07002f;
+    --ds-color-success-100: #dbeae8;
+    --ds-color-success-200: #b5d2ce;
+    --ds-color-success-500: #47CCCC;
+    --ds-color-success-600: #37b5b5;
+    --ds-color-success-700: #154f50;
+    --ds-color-information-100: #e7e4f7;
+    --ds-color-information-200: #c8bff9;
+    --ds-color-information-300: #A397E1;
+    --ds-color-information-500: #6551CC;
+    --ds-color-information-600: #5441b5;
+    --ds-color-information-700: #3b2871;
+    --ds-color-warning-100: #fff4eb;
+    --ds-color-warning-200: #ffd6ae;
+    --ds-color-warning-500: #FFB266;
+    --ds-color-warning-600: #e8a15b;
+    --ds-color-warning-700: #653e18;
+    --ds-color-error-100: #FCEDF1;
+    --ds-color-error-200: #ffc3c3;
+    --ds-color-error-500: #dc305b;
+    --ds-color-error-600: #ca2c54;
+    --ds-color-error-700: #3F111C;
+    --ds-color-destructive-100: #FCEDF1;
+    --ds-color-destructive-200: #ffc3c3;
+    --ds-color-destructive-500: #dc305b;
+    --ds-color-destructive-600: #ca2c54;
+    --ds-color-destructive-700: #3F111C;
+    --ds-color-white: #FFFFFF;
+    --ds-color-black: #000000;
+    --ds-color-transparent: transparent;
+    --ds-color-expressive-green-100: #E3F8EB;
+    --ds-color-expressive-green-300: #C1EDD2;
+    --ds-color-expressive-green-500: #99CCBB;
+    --ds-color-expressive-green-700: #23848A;
+    --ds-color-expressive-blue-100: #EDF9FC;
+    --ds-color-expressive-blue-300: #A5DEF1;
+    --ds-color-expressive-blue-500: #70AFCE;
+    --ds-color-expressive-blue-700: #2C8EC3;
+    --ds-color-expressive-yellow-100: #FAF3DE;
+    --ds-color-expressive-yellow-300: #F9D173;
+    --ds-color-expressive-yellow-500: #EC9B59;
+    --ds-color-expressive-yellow-700: #D27028;
+    --ds-color-expressive-red-100: #FFDED6;
+    --ds-color-expressive-red-300: #F79279;
+    --ds-color-expressive-red-500: #B84F32;
+    --ds-color-expressive-red-700: #9A2B0D;
+    --ds-color-border: var(--ds-color-neutral-200);
+    --ds-color-border-light: var(--ds-color-neutral-100);
+    --ds-color-text: var(--ds-color-neutral-800);
+    --ds-color-text-contrast: #ffffff;
+    --ds-color-text-muted: var(--ds-color-neutral-500);
+    --ds-color-text-muted-contrast: var(--ds-color-neutral-300);
+    --ds-color-background-ui: var(--ds-color-white);
+    --ds-color-background-ui-contrast: var(--ds-color-neutral-900);
+    --ds-color-background-ui-medium: var(--ds-color-white);
+    --ds-color-background-ui-high: var(--ds-color-white);
+    --ds-color-background-alt-50: rgba(245, 245, 248, 0.60);
+    --ds-color-background-alt-100: rgba(233, 233, 240, 0.60);
+    --ds-color-background-alt-200: rgba(187, 193, 202, 0.60);
+    --ds-color-background-alt-500: rgba(63, 78, 105, 0.60);
+    --ds-color-background-app: var(--ds-color-white);
+    --ds-color-background-app-light: var(--ds-color-white);
+    --ds-color-background-app-dark: var(--ds-color-neutral-900);
+    --ds-color-background-overlay: rgba(140, 149, 165, 0.6);
+    --ds-color-background-overlay-transparent: rgba(140, 149, 165, 0);
+    --ds-color-state-disabled-text: var(--ds-color-neutral-300);
+    --ds-color-state-disabled-background: var(--ds-color-background-alt-100);
+    --ds-color-state-focus-border: var(--ds-color-information-300);
+    --ds-color-state-hover-overlay: rgba(26, 18, 57, 0.05);
+    --ds-color-state-hover-overlay-contrast: rgba(255, 255, 255, 0.1);
+    --ds-color-state-loading-background: var(--ds-color-background-alt-200);
+    --ds-font-family: -apple-system, BlinkMacSystemFont, Inter, Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    color: #07002F;
+    line-height: 10px;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+h1{
+    margin-top: 40px;
+    margin-left: 44px;
+    color: #07002f;
+    font-size: 24px;
+    font-weight: 600;
+}

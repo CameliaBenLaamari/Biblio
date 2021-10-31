@@ -1,0 +1,23 @@
+<div class="navbar">
+    <a href=""><img src="assets/logo.svg" width="130px"/></a>
+    <ul>
+        <li routerLinkActive style="margin-right: 40px;">
+            <a routerLink="/home">Home</a>
+        </li>
+        <li routerLinkActive style="margin-right: 40px;"> 
+            <a routerLink="/about">About</a>
+        </li>
+        <li routerLinkActive>
+            <a routerLink="/wishlist" class="round_button">
+                <img src="assets/heart.svg" height="24px">
+                <div class="wishlist-value">{{wishlistCount}}</div>
+            </a>
+        </li>
+        <li routerLinkActive>
+            <a routerLink="/cart" class="round_button">
+                <img src="assets/cart.svg" height="24px">
+                <div class="cart-value">{{cartCount}}</div>
+            </a>
+        </li>
+    </ul>
+</div>

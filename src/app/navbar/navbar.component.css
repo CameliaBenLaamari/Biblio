@@ -1,0 +1,135 @@
+.input_container {
+    display: flex;
+    flex: 1;
+    padding: 12px;
+    border-radius: 5px;
+    margin-left: 45px;
+    border: none;
+    background-color: #f2f2f6;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    justify-content: space-between;
+}
+
+.input_container input[type=text] {
+    top: 50%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.input_container img{
+    top: 50%;
+    height: 24px;
+}
+
+.navbar{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    border-bottom: 2px solid #F2F2F6;
+    height: 30px;
+}
+
+.navbar ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navbar ul li:last-child{
+    margin-right: 0px;
+}
+
+.cart-value{
+    display: flex;
+    background: #E41421;
+    padding: 0.5px 4px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    border: 3px solid white;
+    top: 15px;
+    right: 40px;
+}
+
+.wishlist-value{
+    display: flex;
+    background: #E41421;
+    padding: 0.5px 4px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    border: 3px solid white;
+    top: 15px;
+    right: 95px;
+}
+
+.round_button{
+    display: flex;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.round_button:hover{
+    background: #F2F2F6;
+}
+
+::placeholder{
+    color: #07002F;
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
+    border-bottom: 2px solid #F2F2F6;
+}
+
+nav ul li{
+    padding: 16px 0px;
+    display: inline-block;
+    margin-left: 140px;
+}
+
+nav ul li:first-child{
+    margin-left: 25px;
+}
+
+nav ul li:last-child{
+    margin-right: 25px;
+}
+
+a{
+    padding: 16px 0px;
+    color: #07002F;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FF596F;
+    font-weight: 600;
+}
+
+.active{
+    /*border-bottom: 2px solid #FF596F;*/
+    font-weight: 600;
+}

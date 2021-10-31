@@ -1,0 +1,25 @@
+<div class="container1">
+    <h1>Wishlist</h1>
+    <div *ngIf="wishlist">
+        <div class="container">
+            <mat-grid-list cols="5" rowHeight="2:3">
+              <mat-grid-tile *ngFor="let book of wishlist | paginate: {itemsPerPage: 15, currentPage: page}">
+                  <div class="card">
+                      <a class="image">
+                          <img src={{book.image}}/>
+                          <a [ngClass]="{'round_button_active': isInWishlist(book), 'round_button': !isInWishlist(book)}" (click)="addToWishlist(book)"></a>
+                      </a>
+                      <p><strong>{{book.name}}</strong><br>{{book.author}}</p>
+                      <div class="row" *ngIf="book">
+                          <p style="font-size: 18px; font-weight: bold;">{{book.currency}}{{book.price}}</p>
+                          <a class="round" (click)="addToCart(book)"><img src="assets/buy.svg" style="height: 24px"/></a>
+                      </div>
+                  </div>
+              </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+        <div style="text-align: center; padding: 50px;">
+            <pagination-controls (pageChange)="page = $event" class="paginator"></pagination-controls>
+        </div>
+    </div>
+</div>

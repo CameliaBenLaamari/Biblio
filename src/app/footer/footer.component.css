@@ -1,0 +1,24 @@
+.footer{
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    top: 300%;
+    width: 100%;
+    height: 100px;
+    background: #07002F;
+    margin: -10px -10px -10px -10px;
+    text-align: center;
+}
+
+.footer ul{
+    align-items: center;
+}
+
+.footer ul li{
+    list-style: none;
+}
+
+.footer p{
+    color: white;
+    font-size: 12px;
+}
