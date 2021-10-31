@@ -25,3 +25,5 @@ To start the app, run `ng serve --open` in the terminal. The app will be hosted 
 - Nada Knani
 - Mohamed Omar Amini
 - Chaima Beldi
+
+©2021 SUP'COM.
